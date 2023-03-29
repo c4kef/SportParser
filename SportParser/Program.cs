@@ -74,7 +74,7 @@ tasks.Add(Task.Run(async () =>
                     if (scoreHome == 2 && scoreAway == 0)
                     {
                         Console.Beep(300, 5_000);
-                        await tApi.SendTextMessageAsync(new Telegram.Bot.Types.ChatId(797217283), $"Волейбол: побеждает команда {match.NameTeam1} с меньшим коэф. {match.OddsLose}");
+                        await tApi.SendTextMessageAsync(new Telegram.Bot.Types.ChatId(797217283), $"Волейбол: проигрывает команда {match.NameTeam1} с меньшим коэф. {match.OddsLose}");
                     }
                 }
                 else if (match.OddsWin < match.OddsLose)
@@ -82,7 +82,7 @@ tasks.Add(Task.Run(async () =>
                     if (scoreHome == 0 && scoreAway == 2)
                     {
                         Console.Beep(300, 5_000);
-                        await tApi.SendTextMessageAsync(new Telegram.Bot.Types.ChatId(797217283), $"Волейбол: побеждает команда {match.NameTeam2} с меньшим коэф. {match.OddsWin}");
+                        await tApi.SendTextMessageAsync(new Telegram.Bot.Types.ChatId(797217283), $"Волейбол: проигрывает команда {match.NameTeam2} с меньшим коэф. {match.OddsWin}");
                     }
                 }
             }
@@ -93,7 +93,7 @@ tasks.Add(Task.Run(async () =>
                     if (scoreHome == 1 && scoreAway == 2)
                     {
                         Console.Beep(300, 5_000);
-                        await tApi.SendTextMessageAsync(new Telegram.Bot.Types.ChatId(797217283), $"Волейбол: побеждает команда {match.NameTeam1} с меньшим коэф. {match.OddsLose}");
+                        await tApi.SendTextMessageAsync(new Telegram.Bot.Types.ChatId(797217283), $"Волейбол: проигрывает команда {match.NameTeam1} с меньшим коэф. {match.OddsLose}");
                     }
                 }
                 else if (match.OddsWin < match.OddsLose)
@@ -101,7 +101,7 @@ tasks.Add(Task.Run(async () =>
                     if (scoreHome == 2 && scoreAway == 1)
                     {
                         Console.Beep(300, 5_000);
-                        await tApi.SendTextMessageAsync(new Telegram.Bot.Types.ChatId(797217283), $"Волейбол: побеждает команда {match.NameTeam2} с меньшим коэф. {match.OddsWin}");
+                        await tApi.SendTextMessageAsync(new Telegram.Bot.Types.ChatId(797217283), $"Волейбол: проигрывает команда {match.NameTeam2} с меньшим коэф. {match.OddsWin}");
                     }
                 }
             }
@@ -132,7 +132,7 @@ tasks.Add(Task.Run(async () =>
                     if (scoreHome == 1 && scoreAway == 0)
                     {
                         Console.Beep(300, 5_000);
-                        await tApi.SendTextMessageAsync(new Telegram.Bot.Types.ChatId(797217283), $"Тенис: побеждает команда {match.NameTeam1} с меньшим коэф. {match.OddsLose}");
+                        await tApi.SendTextMessageAsync(new Telegram.Bot.Types.ChatId(797217283), $"Тенис: проигрывает команда {match.NameTeam1} с меньшим коэф. {match.OddsLose}");
                     }
                 }
                 else if (match.OddsWin < match.OddsLose)
@@ -140,7 +140,7 @@ tasks.Add(Task.Run(async () =>
                     if (scoreHome == 0 && scoreAway == 1)
                     {
                         Console.Beep(300, 5_000);
-                        await tApi.SendTextMessageAsync(new Telegram.Bot.Types.ChatId(797217283), $"Тенис: побеждает команда {match.NameTeam2} с меньшим коэф. {match.OddsWin}");
+                        await tApi.SendTextMessageAsync(new Telegram.Bot.Types.ChatId(797217283), $"Тенис: проигрывает команда {match.NameTeam2} с меньшим коэф. {match.OddsWin}");
                     }
                 }
             }
@@ -176,12 +176,12 @@ tasks.Add(Task.Run(async () =>
                     if (match.OddsLose < match.OddsWin)
                     {
                         Console.Beep(300, 5_000);
-                        await tApi.SendTextMessageAsync(new Telegram.Bot.Types.ChatId(797217283), $"Футбол: команда {match.NameTeam1} лидер проигрывает с меньшим коэф. {match.OddsLose}");
+                        await tApi.SendTextMessageAsync(new Telegram.Bot.Types.ChatId(797217283), $"Футбол: команда {match.NameTeam1} проигрывает с меньшим коэф. {match.OddsLose}");
                     }
                     else if (match.OddsWin < match.OddsLose)
                     {
                         Console.Beep(300, 5_000);
-                        await tApi.SendTextMessageAsync(new Telegram.Bot.Types.ChatId(797217283), $"Футбол: команда {match.NameTeam2} лидер проигрывает с меньшим коэф. {match.OddsWin}");
+                        await tApi.SendTextMessageAsync(new Telegram.Bot.Types.ChatId(797217283), $"Футбол: команда {match.NameTeam2} проигрывает с меньшим коэф. {match.OddsWin}");
                     }
                 }
             }
